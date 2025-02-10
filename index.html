@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div id="envelope" class="envelope" onclick="openEnvelope()">
+            <div class="envelope-inner">
+                <p>Selamat Ulang Tahun!</p>
+                <div class="heart"></div>
+            </div>
+        </div>
+
+        <div id="greeting-card" class="hidden card">
+            <h2>Masukkan nama Anda:</h2>
+            <input type="text" id="name-input" placeholder="Nama Anda">
+            <button id="submit-button">OK</button>
+        </div>
+
+        <div id="star-container" class="hidden">
+            <h2>Klik semua bintang!</h2>
+            <div class="stars">
+                <div class="star" onclick="clickStar(this)"></div>
+                <div class="star" onclick="clickStar(this)"></div>
+                <div class="star" onclick="clickStar(this)"></div>
+                <div class="star" onclick="clickStar(this)"></div>
+                <div class="star" onclick="clickStar(this)"></div>
+            </div>
+        </div>
+
+        <div id="waiting-message" class="hidden">
+            <h2></h2>
+        </div>
+
+        <div id="birthday-message" class="hidden">
+            <h2>Happy Birthday, <span id="name-display"></span>!</h2>
+            <p>Semoga hari ini penuh dengan kebahagiaan dan cinta. Selamat merayakan hari istimewa ini!</p>
+            <button id="open-card-button" onclick="openCard()">Buka Kartu Ucapan</button>
+        </div>
+
+        <div id="card-message" class="hidden card-message">
+            <div class="card-content">
+            <button id="close-button" onclick="closeCard()">Close</button>
+                <h2>Happy Birthday, Abang Sayang!</h2>
+                <p>Hari ini adalah hari spesial karena orang yang paling aku sayang sedang berulang tahun! Selamat ulang tahun, cintaku!</p>
+                <p>Selama 4 tahun bersama (2022, 2023, 2024, dan 2025), kita telah melewati begitu banyak cerita—tertawa bersama, menghadapi tantangan, dan terus saling menguatkan. Aku bersyukur setiap hari karena memiliki kamu di sisiku. Kamu adalah anugerah terindah dalam hidupku, tempatku berbagi kebahagiaan, dan pelengkap dalam setiap langkahku.</p>
+                <p>Di hari ulang tahunmu ini, aku berharap semua impian dan harapanmu bisa terwujud. Semoga kita bisa sukses bareng, meraih masa depan dan cita-cita bersama, saling berproses, dan selalu mendukung satu sama lain dalam setiap langkah kehidupan. Aku akan selalu ada untukmu, mencintaimu dengan sepenuh hati, dan bersama-sama kita akan mewujudkan mimpi yang telah kita rancang bersama.</p>
+                <p>Terima kasih sudah menjadi bagian dari hidupku. Aku mencintaimu hari ini, besok, dan selamanya.</p>
+                <p>Selamat ulang tahun, sayangku! ❤️🎉💫</p>
+                <p>To:Cantikk mu maya anugrah lestari</p>
+                <!-- Gambar yang akan ditampilkan saat kartu ucapan dibuka -->
+                <img id="ucapan-image" src="photo4.jpg" alt="Ucapan" style="width: 300px; height: auto; margin-top: 20px; display: none;">
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
